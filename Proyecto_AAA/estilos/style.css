@@ -1,11 +1,11 @@
 :root {
-    --colorPrincipal: #0073EA;
+    --colorPrincipal: #0552a0;
     --color2:#18C434;
     --color3:white;
     --full: 100%;
     --minFSize:9px;
     --heightMargin:9px;
-    --gris1:#9F9F9F;
+    --gris1:#313131;
     --font1:10px;
     --noPad:0px;
     --pad1:10px;
@@ -458,7 +458,7 @@ nav {
 }
 #services > span, #choosePlan > span {
     text-align: center;
-    color: #646464;
+    color: #444444;
     width: 32.6%;
     font-size: var(--font7);
 }
@@ -469,7 +469,7 @@ nav {
     font-family: var(--ff4);
 }
 #services > div > article > span {
-    color: #727272;
+    color: #444444;
     font-size: 14px;
 }
 #services > div > article > a {
@@ -560,7 +560,7 @@ nav {
     grid-column-start: 2;
     font-family: var(--ff4);
     font-size: var(--font7) ;
-    color: #646464;
+    color: #444444;
 }
 #RTColab > img:first-child {
     grid-column-start: 1;
@@ -700,7 +700,7 @@ nav {
     margin: 14px;
     font-family: var(--ff4);
     font-size: var(--font7);
-    color:#8a94b2;
+    color:#444444;
 }
 .plans h3 {
     background-color: #F5FAFD;
@@ -738,7 +738,7 @@ nav {
     border: 1px solid var(--colorPrincipal);
 }
 .plans span:last-child{
-    color: #d9d9d9;
+    color: #444444;
     font-family: var(--ff4);
     font-size: var(--font1);
 }
@@ -755,7 +755,7 @@ input[type="checkbox"]:checked + span {
     color: rgb(143, 143, 143);
 }
 input[type="checkbox"]:not(:checked) + span + span {
-    color: rgb(143, 143, 143);
+    color: #444444;
 }
 .slider {
     background-color: var(--colorPrincipal);;
@@ -899,7 +899,7 @@ color: var(--colorPrincipal);
     border-radius: var(--full);
 }
 #news article > div span:first-of-type {
-    color: #646464;
+    color: #444444;
     font-size: var(--font4) ;
     align-self: flex-end;
 }
@@ -976,7 +976,7 @@ footer {
     place-content: center;
     align-items: center;
     font-family: var(--ff4);
-    color: #828282;
+    color: #444444;
     font-size: var(--font4);
     gap: 35px;
     grid-row-gap:70px;
@@ -1014,7 +1014,7 @@ footer section:first-child p {
 }
 footer h2 {
     font-weight: normal;
-    color: #646464;
+    color: #444444;
     font-size: var(--font4);
     font-family: var(--ff2);
   }

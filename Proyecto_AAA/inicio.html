@@ -9,10 +9,16 @@
     <link rel="stylesheet" href="estilos/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/2f9bf53b97.js" crossorigin="anonymous"></script>
     <style>
-        .navegacion i {
+        .buttonTop {
             transform: rotate(-90deg);
             position: fixed;
             bottom: 50px;
+            right: 50px;
+        }
+        .buttonMain {
+            transform: rotate(90deg);
+            position: fixed;
+            top: 50px;
             right: 50px;
         }
     </style>
@@ -21,6 +27,8 @@
 <body>
     <header>
             <div class="navegacion" id="navegacion">
+                <a href="#bypass"><i class="buttonMain fa-solid fa-arrow-right"></i></a>
+
                 <img src="fotos/logoAI.png" alt="logo" class="logo">
                 <h1>prelude</h1>
                 <nav>
@@ -35,7 +43,7 @@
                     </ul>
                     <button class="start">Get Started</button>
                 </nav>
-                <a href="#navegacion"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#navegacion"><i class="buttonTop fa-solid fa-arrow-right"></i></a>
             </div>
             <div>
                 <span>Business hand in hand with our technology</span>
@@ -48,14 +56,14 @@
                 </div>
             </div>
     </header>
-    <main>
+    <main id="bypass">
         <section class="services" id="services">
             <h2>Our nature is effortless technology</h2>
             <span>We are a consultancy company specialised in Technology 
                 and Information Systems. Or in Human
                 Relationships. It depends on who you ask.</span>
             <div>
-                <article>
+                <article aria-label="Business Analysis">
                     <img src="fotos/bai.PNG" alt="business analysis icono">
                     <h3>Business Analysis</h3>
                     <span>We understand business needs and complexity to assist 
@@ -63,7 +71,7 @@
                     </span>
                     <a href="#"><img src="fotos/flechaHover.png" alt="flecha" class="flecha"></a>
                 </article>
-                <article>
+                <article aria-label="Data Engineering">
                     <img src="fotos/dei.PNG" alt="data Engineering icono">
                     <h3>Data Engineering</h3>
                     <span>We understand business needs and complexity to assist 
@@ -71,7 +79,7 @@
                     </span>
                     <a href="#"><img src="fotos/flechaHover.png" alt="flecha" class="flecha"></a>
                 </article>
-                <article>
+                <article aria-label="Project Management">
                     <img src="fotos/pmi.PNG" alt="Project management icono">
                     <h3>Project Management</h3>
                     <span>We understand business needs and complexity to assist 
@@ -79,7 +87,7 @@
                     </span>
                     <a href="#"><img src="fotos/flechaHover.png" alt="flecha" class="flecha"></a>
                 </article>
-                <article>
+                <article aria-label="Business Coaching">
                     <img src="fotos/bci.PNG" alt="coaching icono">
                     <h3>Business Coaching</h3>
                     <span>We understand business needs and complexity to assist 
@@ -87,7 +95,7 @@
                     </span>
                     <a href="#"><img src="fotos/flechaHover.png" alt="flecha" class="flecha"></a>
                 </article>
-                <article>
+                <article aria-label="HR Support">
                     <img src="fotos/hri.PNG" alt="support icono">
                     <h3>HR Support</h3>
                     <span>We understand business needs and complexity to assist 
@@ -95,7 +103,7 @@
                     </span>
                     <a href="#"><img src="fotos/flechaHover.png" alt="flecha" class="flecha"></a>
                 </article>
-                <article>
+                <article aria-label="Management Consulting">
                     <img src="fotos/mci.PNG" alt="consulting icono">
                     <h3>Management Consulting</h3>
                     <span>We understand business needs and complexity to assist 
@@ -117,13 +125,13 @@
         <section id="RTColab">
             <img src="fotos/estadisticas.PNG" alt="estadisticas">
             <h2>Real-time document collaboration</h2>
-            <article>
+            <article aria-label="Introducing workspaces">
                 <img src="fotos/wi.PNG" alt="workspaces icono" class="icon_RTColab">
                 <h3>Introducing workspaces</h3>
                 <p>Each workspace centralizes your data, team activities and 
                 tools. Focus more on what matters.</p>
             </article>
-            <article>
+            <article aria-label="Increase productivity">
                 <img src="fotos/statsi.PNG" alt="stats icono" class="icon_RTColab">
                 <h3>Increase productivity</h3>
                 <p>Each workspace centralizes your data, team activities and 
@@ -165,19 +173,19 @@
         </section>
         <section id="expansion">
             <h2 style="display: none;">Business expansion</h2>
-            <article>
+            <article aria-label="Launched startups">
                 <span>80+</span>
                 <h3>Launched startups</h3>
                 <p>We support your business to advice its best financial 
                     outcomes</p>
             </article>
-            <article>
+            <article aria-label="Countries worldwide">
                 <span>20+</span>
                 <h3>Countries worldwide</h3>
                 <p>We support your business to advice its best financial 
                     outcomes</p>
             </article>
-            <article>
+            <article aria-label="Happy customers">
                 <span>3.2k</span>
                 <h3>Happy customers</h3>
                 <p>We support your business to advice its best financial 
@@ -191,7 +199,7 @@
                 success.</span>
             <label><input type="checkbox"><span>Personal</span><span>Enterprise</span><span class="slider"></span></label>
             <div class="plans">
-                <article>
+                <article aria-label="Basic plan">
                     <h3>BASIC</h3>
                     <span><sup>$</sup>29<sup>00</sup></span>
                     <p>Up to 100 open invoices</p>
@@ -202,7 +210,7 @@
                     <button class="purchase">Purchase Now</button>
                     <span>No Hidden Fees</span>
                 </article>
-                <article>
+                <article aria-label="Popular plan">
                     <h3>POPULAR</h3>
                     <span><sup>$</sup>49<sup>00</sup></span>
                     <p>Up to 100 open invoices</p>
@@ -213,7 +221,7 @@
                     <button class="purchase">Purchase Now</button>
                     <span>No Hidden Fees</span>
                 </article>
-                <article>
+                <article aria-label="Premium plan">
                     <h3>PREMIUM</h3>
                     <span><sup>$</sup>59<sup>00</sup></span>
                     <p>Up to 100 open invoices</p>
@@ -231,15 +239,15 @@
             <div class="slide">
                 <div class="slide-inner">
                     <input class="slide-open" type="radio" id="slide-1" 
-                          name="slide" aria-hidden="true" hidden="" checked="checked">
+                          name="slide" hidden="" checked="checked">
                     <div class="slide-item">
-                        <article class="first">
+                        <article class="first" aria-label="The business of business is changing for the better - Comment">
                             <h3>The business of business is changing for the better</h3>
                             <p>If your business depends on you, you don't own a business 
                                 - you have a job.</p>
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </article>
-                        <article>
+                        <article aria-label="Setella Smith first comment">
                             <h3>Business consolidation is crushing the economy and people</h3>
                             <div>
                                 <img src="fotos/perfil1.PNG" alt="foto de perfil">
@@ -248,7 +256,7 @@
                             </div>
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </article>
-                        <article>
+                        <article aria-label="Monica Smith first comment">
                             <h3>Can business be honorable? This book says "Yes"</h3>
                             <div>
                                 <img src="fotos/perfil2.PNG" alt="foto de perfil">
@@ -259,9 +267,9 @@
                         </article>
                     </div>
                     <input class="slide-open" type="radio" id="slide-2" 
-                          name="slide" aria-hidden="true" hidden="">
+                          name="slide" hidden="">
                     <div class="slide-item">
-                        <article>
+                        <article aria-label="Ernest Smith first comment">
                             <h3>Turn your expertise into your service-based business</h3>
                             <div>
                                 <img src="fotos/perfil3.PNG" alt="foto de perfil">
@@ -270,7 +278,7 @@
                             </div>
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </article>
-                        <article>
+                        <article aria-label="Monica Smith second comment">
                             <h3>Can business be honorable? This book says "Yes"</h3>
                             <div>
                                 <img src="fotos/perfil2.PNG" alt="foto de perfil">
@@ -279,7 +287,7 @@
                             </div>
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </article>
-                        <article>
+                        <article aria-label="Setella Smith second comment">
                             <h3>Business consolidation is crushing the economy and people</h3>
                             <div>
                                 <img src="fotos/perfil1.PNG" alt="foto de perfil">
@@ -290,9 +298,9 @@
                         </article>
                     </div>
                     <input class="slide-open" type="radio" id="slide-3" 
-                          name="slide" aria-hidden="true" hidden="">
+                          name="slide" hidden="">
                     <div class="slide-item">
-                        <article>
+                        <article aria-label="Setella Smith third comment">
                             <h3>Business consolidation is crushing the economy and people</h3>
                             <div>
                                 <img src="fotos/perfil1.PNG" alt="foto de perfil">
@@ -301,7 +309,7 @@
                             </div>
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </article>
-                        <article>
+                        <article aria-label="Ernest Smith second comment">
                             <h3>Turn your expertise into your service-based business</h3>
                             <div>
                                 <img src="fotos/perfil3.PNG" alt="foto de perfil">
@@ -310,7 +318,7 @@
                             </div>
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </article>
-                        <article>
+                        <article aria-label="Monica Smith third comment">
                             <h3>Can business be honorable? This book says "Yes"</h3>
                             <div>
                                 <img src="fotos/perfil2.PNG" alt="foto de perfil">
@@ -342,20 +350,20 @@
 
         <section id="media">
             <h2>Media</h2>
-            <article>
+            <article aria-label="Prelude presentation video">
                 <h3>Prelude</h3>
                 <video controls>
                     <source src="./media/proyecto.mp4" type="video/mp4">
                 </video>
             </article>
-            <article>
+            <article aria-label="Digital assistant explain vivdeo">
                 <h3>Digital assistant</h3>
                 <iframe src="https://www.youtube.com/embed/dqmJRScuZnE" 
-                title="YouTube video player" frameborder="0" 
+                title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
                 picture-in-picture; web-share" allowfullscreen></iframe>
             </article>
-            <article>
+            <article aria-label="Prelude music audio">
                 <h3>Music</h3>
                 <audio controls>
                     <source src="media/proyecto.mp3" type="audio/mp3">
@@ -397,28 +405,28 @@
         <section>
             <h2>About</h2>
             <ul>
-                <li><a href="#1">Services</a></li>
-                <li><a href="#2">Portfolio</a></li>
-                <li><a href="#3">About</a></li>
-                <li><a href="#4">Blog</a></li>
+                <li><a href="#Services" id="Services">Services</a></li>
+                <li><a href="#Portfolio" id="Portfolio">Portfolio</a></li>
+                <li><a href="#About" id="About">About</a></li>
+                <li><a href="#Blog" id="Blog">Blog</a></li>
             </ul>
         </section>
         <section>
             <h2>Products</h2>
             <ul>
-                <li><a href="#5">Platform</a></li>
-                <li><a href="#6">Customers</a></li>
-                <li><a href="#7">Products</a></li>
-                <li><a href="#8">Pricing</a></li>
+                <li><a href="#Platform" id="Platform">Platform</a></li>
+                <li><a href="#Customers" id="Customers">Customers</a></li>
+                <li><a href="#Products" id="Products">Products</a></li>
+                <li><a href="#Pricing" id="Pricing">Pricing</a></li>
             </ul>
         </section>
         <section>
             <h2>Resources</h2>
             <ul>
-                <li><a href="#9">Training</a></li>
-                <li><a href="#10">Marketplace</a></li>
-                <li><a href="#11">Experts</a></li>
-                <li><a href="#12">Guides</a></li>
+                <li><a href="#Training" id="Training">Training</a></li>
+                <li><a href="#Marketplace" id="Marketplace">Marketplace</a></li>
+                <li><a href="#Experts" id="Experts">Experts</a></li>
+                <li><a href="#Guides" id="Guides">Guides</a></li>
             </ul>
         </section>
         <section>
@@ -432,7 +440,7 @@
         <section>
             <h2 style="display:none;">Rights and cookies</h2>
             <span>©2019 Prelude by Marcos García. All Rights Reserved</span>
-            <span><a href="#13">Terms of use</a> | <a href="#14">Privacy policy</a></span>
+            <span><a href="#Terms" id="Terms">Terms of use</a> | <a href="#Policy" id="Policy">Privacy policy</a></span>
         </section>
     </footer>
 </body>
