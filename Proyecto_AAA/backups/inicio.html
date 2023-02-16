@@ -197,19 +197,7 @@
             <span>Let's see how we can partner with yout business to navigate 
                 the ever-changing world and achieve business
                 success.</span>
-            <!-- <label>
-                <input type="checkbox">
-                <span>Personal</span>
-                <span>Enterprise</span>
-                <span class="slider"></span>
-            </label> -->
-
-            <label>               
-                <span>Personal</span>
-                <span>Enterprise</span>
-                <span class="slider" data-selected="Personal"></span>
-            </label>
-
+            <label><input type="checkbox"><span>Personal</span><span>Enterprise</span><span class="slider"></span></label>
             <div class="plans">
                 <article aria-label="Basic plan">
                     <h3>BASIC</h3>
@@ -248,6 +236,112 @@
         </section>
         <section id="news">
             <h2>Latest news</h2>
+            <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" 
+                          name="slide" hidden="" checked="checked">
+                    <div class="slide-item">
+                        <article class="first" aria-label="The business of business is changing for the better - Comment">
+                            <h3>The business of business is changing for the better</h3>
+                            <p>If your business depends on you, you don't own a business 
+                                - you have a job.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article aria-label="Setella Smith first comment">
+                            <h3>Business consolidation is crushing the economy and people</h3>
+                            <div>
+                                <img src="fotos/perfil1.PNG" alt="foto de perfil">
+                                <span>SETELLA SMITH</span>
+                                <span>27 August 2019</span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article aria-label="Monica Smith first comment">
+                            <h3>Can business be honorable? This book says "Yes"</h3>
+                            <div>
+                                <img src="fotos/perfil2.PNG" alt="foto de perfil">
+                                <span>MONICA SMITH</span>
+                                <span>23 August 2019</span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" 
+                          name="slide" hidden="">
+                    <div class="slide-item">
+                        <article aria-label="Ernest Smith first comment">
+                            <h3>Turn your expertise into your service-based business</h3>
+                            <div>
+                                <img src="fotos/perfil3.PNG" alt="foto de perfil">
+                                <span>ERNEST SMITH</span>
+                                <span>07 August 2019</span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article aria-label="Monica Smith second comment">
+                            <h3>Can business be honorable? This book says "Yes"</h3>
+                            <div>
+                                <img src="fotos/perfil2.PNG" alt="foto de perfil">
+                                <span>MONICA SMITH</span>
+                                <span>23 August 2019</span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article aria-label="Setella Smith second comment">
+                            <h3>Business consolidation is crushing the economy and people</h3>
+                            <div>
+                                <img src="fotos/perfil1.PNG" alt="foto de perfil">
+                                <span>SETELLA SMITH</span>
+                                <span>27 August 2019</span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" 
+                          name="slide" hidden="">
+                    <div class="slide-item">
+                        <article aria-label="Setella Smith third comment">
+                            <h3>Business consolidation is crushing the economy and people</h3>
+                            <div>
+                                <img src="fotos/perfil1.PNG" alt="foto de perfil">
+                                <span>SETELLA SMITH</span>
+                                <span>27 August 2019</span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article aria-label="Ernest Smith second comment">
+                            <h3>Turn your expertise into your service-based business</h3>
+                            <div>
+                                <img src="fotos/perfil3.PNG" alt="foto de perfil">
+                                <span>ERNEST SMITH</span>
+                                <span>07 August 2019</span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article aria-label="Monica Smith third comment">
+                            <h3>Can business be honorable? This book says "Yes"</h3>
+                            <div>
+                                <img src="fotos/perfil2.PNG" alt="foto de perfil">
+                                <span>MONICA SMITH</span>
+                                <span>23 August 2019</span>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        
+                    </div>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div>
 
             <div class="carousel">
                 <button id="prev"><</button>
@@ -278,7 +372,7 @@
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </article>
                     </div>
-                    <div class="carousel-page blocked" style="display:none;">
+                    <div class="carousel-page blocked">
                         <article aria-label="Ernest Smith first comment">
                             <h3>Turn your expertise into your service-based business</h3>
                             <div>
@@ -307,7 +401,7 @@
                             <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
                         </article>
                     </div>
-                    <div class="carousel-page blocked" style="display:none;">
+                    <div class="carousel-page blocked">
                         <article aria-label="Setella Smith third comment">
                             <h3>Business consolidation is crushing the economy and people</h3>
                             <div>
@@ -338,17 +432,6 @@
                     </div>
                 </div>
                 <button id="next">></button>
-                <ol class="slide-indicador">
-                    <li>
-                        <label for="slide-1" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-2" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-3" class="slide-circulo">•</label>
-                    </li>
-                </ol>
             </div>
         </section>
         <section id="getInTouch">
